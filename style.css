@@ -1,0 +1,651 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: Calibri, Arial, sans-serif;
+  min-width: 320px;
+}
+
+/* MAIN */
+
+main {
+  background-color: #FFF;
+  display: block; /* For IE */
+  width: 960px;
+  margin: 0 auto;
+}
+
+#clear {
+  clear: both;
+  width: 0;
+  border: 0;
+}
+
+/* HEADER */
+
+header {
+  background-color: #3A3A3A; /* For IE 8 */
+  background-color: rgba(39, 39, 39, 0.9);
+  color: #C7CBC7;
+  height: 180px;
+  position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  z-index: 4; /* Header above the rest */
+}
+
+header h1 {
+  position: absolute;
+    top: 25px;
+    left: 250px;
+  font-size: 64px;
+}
+
+header a h3 {
+  text-decoration: none;
+  margin: 0;
+  position: absolute;
+    top: 140px;
+    left: 254px;
+  color: #C7CBC7;
+  font-size: 12px;
+}
+
+#logo {
+  position: absolute;
+    top: 95px;
+    left: 35px;
+}
+
+/* NAV */
+
+nav {
+  background-color: #B6B6B6;
+  background-color: rgba(182, 182, 182, 0.81);
+  position: fixed;
+    top: 180px;
+    right: 0;
+  z-index: 2;
+}
+
+nav div.link {
+  display: inline-block;
+  width: 150px;
+}
+
+nav a {
+  text-decoration: none;
+  display: block;
+  color: #DE5833;
+  text-align: center;
+  padding: 10px 0 10px 0;
+}
+
+nav a:hover, nav a:focus {
+  background-color: #DE5833;
+  color: #3A3A3A;
+}
+
+nav a:active {
+  color: #C7CBC7;
+}
+
+#current a {
+  position: relative;
+  background-color: #3A3A3A;
+  color: #DE5833;
+  z-index: 4;
+}
+
+/* CONTENT */
+
+#content {
+  background-color: #FFF;
+  position: relative;
+    top: 200px;
+    left: auto;
+  z-index: 0;
+  width: auto;
+  padding: 70px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+#content p.code, #content ol.code {
+  font-family:monospace;
+  font-size:13px;
+  color:gray;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+#content ol.code { /* Align the marker of the list with the text*/
+  padding-left: 0;
+  margin-left:2em;
+}
+
+#content * .terminal {
+  padding-left: 10px;
+  font-family: monospace;
+  font-size: 1.1em;
+}
+
+#content * .include {
+  color: #BF742E;
+}
+
+#content * .bib {
+  color: #378884;
+}
+
+#content * .csdoc {
+  color: #C1AB3B;
+}
+
+#content * .keyword {
+	color: #BE100A;
+}
+
+#content * .spec {
+	color: #1B3EBA;
+}
+
+#content * .method {
+	color: #0A88BE;
+}
+
+#content * .type {
+  color: #9A315A;
+}
+
+#content * .string {
+	color: #20A469;
+}
+
+#content p.comment, #content * .comment {
+  color: #177817;
+}
+
+#content * .public, .var {
+	color: #851FA3;
+}
+
+#content * .italic {
+  font-style: italic;
+}
+
+#content p {
+  text-align: justify;
+}
+
+#content a {
+  text-decoration: none;
+  color: #8A8A8A;
+}
+
+#content a:hover, #content a:focus {
+  color: #DE5833;
+  text-decoration: underline;
+}
+
+#content a:active {
+  color: #C7CBC7;
+}
+
+#content img#contact, #content img.centerLogo, #content img#model {
+  display: block;
+  margin: 0 auto;
+}
+
+ul.square {
+  list-style-type: square;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: #3A3A3A;
+  background-color: rgba(39, 39, 39, 0.9);
+  position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0; /* Takes the entire width because left and right at 0 */
+  padding: 30px;
+}
+
+footer p {
+  padding: 0;
+  margin: 0;
+  color: #C7CBC7;
+}
+
+#license {
+  z-index: 4; /* For the link */
+  position: absolute;
+    top: 15px;
+    left: 10px;
+}
+
+#center {
+  text-align: center;
+  position: fixed;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+}
+
+#about {
+  position: fixed;
+    bottom: 20px;
+    right: 10px;
+}
+
+#licenselink {
+  color: #C7CBC7;
+  font-size: 12px;
+  position: fixed;
+    bottom: 3px;
+    left: 10px;
+}
+
+#licenselink a {
+  text-decoration: none;
+  color: #8A8A8A;
+}
+
+#licenselink a:hover, #licenselink a:focus {
+  color: #DE5833;
+  text-decoration: underline;
+}
+
+#licenselink a:active {
+  color: #5A5A5A;
+}
+
+@media only screen and (max-device-width: 1024px),
+              only screen and (max-width: 1024px) {
+
+  /* MAIN */
+
+  main {
+    width: 95%;
+  }
+
+  /* HEADER */
+
+  header {
+    height: 130px;
+  }
+
+  header h1 {
+    position: absolute;
+      top: 12px;
+      left: 180px;
+    font-size: 50px;
+  }
+
+  header a h3 {
+    position: absolute;
+      top: 105px;
+      left: 184px;
+  }
+
+  #logo {
+    position: absolute;
+        top: 60px;
+        left: 35px;
+  }
+
+  #logo a img {
+    width: 140px;
+    height: 140px;
+  }
+
+  /* NAV */
+
+  nav {
+    position: fixed;
+      top: 130px;
+      right: 0;
+  }
+
+  nav div.link {
+    width: 105px;
+  }
+
+  /* CONTENT */
+
+  #content {
+    position: relative;
+      top: 140px;
+      left: auto;
+  }
+
+  /* FOOTER */
+
+  footer {
+    padding: 25px;
+  }
+
+  #license {
+    position: absolute;
+      top: 12px;
+      left: 10px;
+  }
+
+  #center {
+    position: fixed;
+      bottom: 18px;
+      left: 0;
+      right: 0;
+  }
+
+  #about {
+    position: fixed;
+      bottom: 18px;
+      right: 10px;
+  }
+}
+
+@media only screen and (max-device-width: 768px)
+              and (orientation: portrait) { /* Smartphone in portrait */
+
+  /* MAIN */
+
+  main {
+    width: 100%;
+  }
+
+  /* HEADER */
+
+	header {
+		height: 200px;
+	}
+
+  header h1 {
+    text-align: center;
+    position: fixed;
+      top: 25px;
+      left: 0;
+      right: 0;
+    font-size: 64px;
+  }
+
+  header a h3 {
+    text-align: center;
+    position: fixed;
+      top: 139px;
+      left: 0;
+      right: 0;
+    font-size: 17px;
+  }
+
+  #logo {
+    position: absolute;
+      top: 35px;
+      left: 60px;
+  }
+
+  #logo a img {
+    width: 140px;
+    height: 140px;
+  }
+
+  /* NAV */
+
+  nav {
+    width: 100%;
+    position: fixed;
+      top: 200px;
+      right: 0;
+  }
+
+  nav div.link {
+    font-size: 1.6em;
+    width: 20%;
+  }
+
+  nav a {
+    width: 100%;
+  }
+
+  nav a:hover, nav a:focus {
+    width: 100%;
+  }
+
+  /* CONTENT */
+
+  #content {
+    position: relative;
+      top: 200px;
+      left: auto;
+    /*font-size: 2em;*/
+  }
+
+  h3 {
+    font-size: 2em;
+  }
+
+  /* FOOTER */
+
+  footer {
+    padding: 30px;
+  }
+
+  #license {
+    position: absolute;
+      top: 7px;
+      left: 10px;
+  }
+
+  #license a img {
+    width: 160px;
+    height: 30px;
+  }
+
+  #center {
+    position: fixed;
+      bottom: 23px;
+      left: 0;
+      right: 0;
+  }
+
+  #about {
+    position: fixed;
+      bottom: 23px;
+      right: 10px;
+    font-size: 25px;
+  }
+
+  #licenselink {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 768px) { /* PC Smaller Than 768px */
+
+  /* MAIN */
+
+  main {
+    width: 100%;
+  }
+
+  /* HEADER */
+
+	header {
+		height: 200px;
+	}
+
+  header h1 {
+    text-align: left;
+    position: fixed;
+      top: 25px;
+      left: 215px;
+      right: 0;
+    font-size: 64px;
+  }
+
+  header a h3 {
+    text-align: left;
+    position: fixed;
+      top: 139px;
+      left: 218px;
+      right: 0;
+    font-size: 17px;
+  }
+
+  #logo {
+    position: absolute;
+      top: 35px;
+      left: 60px;
+  }
+
+  #logo a img {
+    width: 140px;
+    height: 140px;
+  }
+
+  /* NAV */
+
+  nav {
+    width: 100%;
+    position: fixed;
+      top: 200px;
+      right: 0;
+  }
+
+  nav div.link {
+    font-size: 16px;
+    width: 20%;
+  }
+
+  nav a {
+    width: 100%;
+  }
+
+  nav a:hover, nav a:focus {
+    width: 100%;
+  }
+
+  /* CONTENT */
+
+  #content {
+    position: relative;
+      top: 200px;
+      left: auto;
+  }
+
+  /* FOOTER */
+
+  footer {
+    padding: 30px;
+  }
+
+  #license {
+    position: absolute;
+      top: 17px;
+      left: 10px;
+  }
+
+  #center {
+    position: fixed;
+      bottom: 23px;
+      left: 0;
+      right: 0;
+  }
+
+  #about {
+    position: fixed;
+      bottom: 23px;
+      right: 10px;
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-device-width: 640px)
+              and (orientation: landscape) { /* Smartphone in landscape */
+
+  /* HEADER */
+
+	header {
+		height: 100px;
+	}
+
+  header h1 {
+    text-align: center;
+    position: fixed;
+      top: -25px;
+      left: 0;
+      right: 0;
+    font-size: 50px;
+  }
+
+  header a h3 {
+    text-align: center;
+    position: fixed;
+      top: 60px;
+      left: 0;
+      right: 0;
+    font-size: 15px;
+  }
+
+  #logo {
+    position: absolute;
+      top: 33px;
+      left: 60px;
+  }
+
+  #logo a img {
+    width: 90%;
+    height: 90%;
+  }
+
+  /* NAV */
+
+  nav {
+    position: fixed;
+      top: 100px;
+      right: 0;
+    z-index: 2;
+  }
+
+  nav div.link {
+    font-size: 1.2em;
+  }
+
+  /* FOOTER */
+
+  footer {
+    padding: 30px;
+  }
+
+  #license {
+    position: absolute;
+      bottom: 17px;
+      left: 10px;
+  }
+
+  #license a img {
+    width: 160px;
+    height: 30px;
+  }
+
+  #center {
+    position: fixed;
+      bottom: 20px;
+      left: 0;
+      right: 0;
+  }
+
+  #about {
+    position: fixed;
+      bottom: 20px;
+      right: 10px;
+    font-size: 25px;
+  }
+}

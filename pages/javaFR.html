@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!--[if lte IE 8]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script>
+    document.createElement('header');
+    document.createElement('nav');
+    document.createElement('article');
+    document.createElement('section');
+    document.createElement('footer');
+    </script>
+    <![endif]-->
+    <link rel="stylesheet" href="../style.css">
+    <meta name="description" lang="fr" content="Historique et brève explication
+    sur le langage de programmation Java.">
+    <meta name="keywords" lang="fr" content="James Gosling, Gosling, Patrick Naughton,
+    Naughton, Sun, Oracle, Java, objet, orienté objet, programmation, langage de programmation">
+    <meta name="author" content="Ducobu Alexandre">
+    <title> Java Français | inComments </title>
+    <!-- For old IEs -->
+    <link rel="shortcut icon" href="../img/favicons/favicon.ico" />
+    <!-- For new browsers - multisize ico  -->
+    <link rel="icon" type="image/x-icon" sizes="16x16 32x32" href="../img/favicons/favicon.ico">
+    <!-- For Safari's Pinned Tab -->
+    <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#DE5833">
+    <!-- For iPad with high-resolution Retina display running iOS ≥ 7: -->
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../img/favicons/favicon-152.png">
+    <!-- For iPad with high-resolution Retina display running iOS ≤ 6: -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../img/favicons/favicon-144i.png">
+    <!-- For iPhone with high-resolution Retina display running iOS ≥ 7: -->
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="../img/favicons/favicon-120.png">
+    <!-- For iPhone with high-resolution Retina display running iOS ≤ 6: -->
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../img/favicons/favicon-114.png">
+    <!-- For iPhone 6+ -->
+    <link rel="apple-touch-icon-precomposed" sizes="180x180" href="../img/favicons/favicon-180.png">
+    <!-- For first- and second-generation iPad: -->
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../img/favicons/favicon-72.png">
+    <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+    <link rel="apple-touch-icon-precomposed" href="../img/favicons/favicon-57.png">
+    <!-- For Old Chrome -->
+    <link rel="icon" href="../img/favicons/favicon-32.png" sizes="32x32">
+    <!-- For IE10 Metro -->
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta name="msapplication-TileImage" content="../img/favicons/favicon-144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Chrome for Android -->
+    <link rel="manifest" href="../img/favicons/manifest.json">
+    <link rel="icon" sizes="192x192" href="../img/favicons/favicon-192.png">
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Java</h1>
+        <a href="java.html"><h3>English</h3></a>
+        <div id="logo">
+          <a href="indexFR.html">
+            <!--[if lte IE 8]><img src="../img/IE8/logo2.png" style="border-width:0"
+            alt="Logo"width="170"height="170" /><![endif]-->
+            <!--[if !IE]> --><img src="../img/logo2.svg" alt="Logo" style="border-width:0"
+            width="170" height="170" /><!-- <![endif]-->
+          </a>
+        </div>
+      </header>
+      <nav>
+        <div class="link"><a href="indexFR.html">Accueil</a></div><!--
+        --><div class="link"><a href="pythonFR.html">Python</a></div><!--
+        --><div class="link" id="current"><a href="javaFR.html">Java</a></div><!--
+        --><div class="link"><a href="cFR.html">C</a></div><!--
+        --><div class="link"><a href="csharpFR.html">C#</a></div>
+      </nav>
+      <div id="content">
+        <h3>Java, c'est quoi ?</h3>
+        <p>
+          Le langage Java est un langage de programmation orienté objet créé
+          par James Gosling et Patrick Naughton, employés de Sun Microsystems,
+          présenté officiellement le 23 mai 1995. <br>
+          La société Sun a été ensuite rachetée en 2009 par la société Oracle
+          qui détient et maintient désormais Java.
+        </p>
+        <!--[if lte IE 8]><img class="centerLogo" src="../img/IE8/Java_Logo.png"
+        alt="Logo de Java" title="Logo de Java" width="54" height="100" /><![endif]-->
+        <!--[if !IE]> --><img class="centerLogo" src="../img/Java_Logo.svg"
+        alt="Logo de Java" title="Logo de Java" width="54" height="100" /><!-- <![endif]-->
+        <p>
+          Le langage Java reprend en grande partie la syntaxe du langage C++,
+          très utilisée par les informaticiens, sans les pointeurs et l’héritage
+          multiple, remplacé par les interfaces. <br>
+          Contrairement au langage Python, Java n'impose pas d'indentation
+          particulière du code source. On peut donc écrire son code source en
+          une seule ligne sans rencontrer d’erreur. Par contre, il y a une perte
+          non négligeable de clarté, c’est pourquoi il est fortement recommandé
+          de suivre les conventions. <br>
+          Par exemple, il faut entourer les blocs par des accolades - l’accolade
+          ouvrante se trouvant à la fin de la ligne précédant le bloc, de même
+          pour la fermante.
+        </p>
+        <ol class="code" title="'Hello World !' en Java">
+          <li>
+            <strong class="public">public class</strong>
+            <span class="method">HelloPrinter</span> {
+          </li>
+          <li>
+            <strong class="public" style="margin-left:2em;">public static void</strong>
+            <span class="keyword">main</span>(<span class="type">String[]</span>
+            <span class="var">args</span>) {
+          </li>
+          <li>
+            <em class="comment" style="margin-left:4em;">// Affiche un message
+              dans la console</em>
+          </li>
+          <li>
+            <span class="keyword" style="margin-left:4em;">System</span><span
+            class="spec">.</span>out<span class="spec">.</span><span
+            class="keyword">println</span>(<em
+            class="string">"Hello, World!"</em>)<span class="spec">;</span>
+          </li>
+          <li>
+            <span style="margin-left:2em;">}</span>
+          </li>
+          <li>
+            }
+          </li>
+        </ol>
+        <p>
+          L'un des principes phares de Java réside dans sa machine virtuelle
+          (JVM pour <strong>Java Virtual Machine</strong>): celle-ci
+          assure à tous les développeurs Java qu'un programme sera utilisable
+          avec tous les systèmes d'exploitation sur lesquels est installée une
+          machine virtuelle Java. Le code source est compilé en
+          <strong>bytecode</strong>, un langage compréhensible pour la JVM.
+        </p>
+        <p>
+          Un des points forts du langage, c’est sa
+          <a href="http://docs.oracle.com/javase/8/docs/api/" title="API Java 8"
+          target="_blank">Javadoc</a>:
+          c’est la documentation officielle qui contient les méthodes et objets
+          de l’API Java pour chaque version. <br>
+          De plus, tout développeur à la possibilité d’écrire sa propre javadoc
+          au travers de commentaires présents dans le code source en Java. Une
+          fois terminée, la javadoc est disponible en HTML et CSS.
+        </p>
+        <p>
+          Certains
+          <a href="http://www.oracle.com/technetwork/java/javase/documentation/index-137868.html#tag"
+          title="Tags de la Javadoc" target="_blank">tags</a> sont réservés à
+          la création de la Javadoc, comme:
+        </p>
+        <ul class="square">
+          <li><strong>@param</strong> qui définit un paramètre de méthode;</li>
+          <li><strong>@return</strong> qui définit la valeur retournée par la
+            méthode;</li>
+          <li><strong>@exception</strong> qui documente une exception lancée
+            par une méthode.</li>
+        </ul>
+        <ol class="code" title="Fibonacci en Java, exemple de Javadoc">
+          <li>
+            <em class="comment">/**</em>
+          </li>
+          <li>
+            <em class="comment">&nbsp;* Méthode qui calcule la suite de Fibonacci.</em>
+          </li>
+          <li>
+            <em class="comment">&nbsp;*</em>
+          </li>
+          <li>
+            <em class="comment">&nbsp;* <span class="keyword">@param k</span></em>
+          </li>
+          <li>
+            <em class="comment">&nbsp;* <span style="margin-left:2em;">Le numéro
+              de l'élément à calculer.</span></em>
+          </li>
+          <li>
+            <em class="comment">&nbsp;*</em>
+          </li>
+          <li>
+            <em class="comment">&nbsp;* <span class="keyword">@return</span>
+              L'élément 'k' de la suite.</em>
+          </li>
+          <li>
+            <em class="comment">&nbsp;*/</em>
+          </li>
+          <li>
+            <strong class="public">public int</strong>
+            <span class="method">fibo</span>(<span
+            class="type">int</span> <span class="var">k</span>) {
+          </li>
+          <li>
+            <span class="keyword" style="margin-left:2em;">if</span>
+            (<span class="var">k</span> <span class="spec">==</span> 0)
+          </li>
+          <li>
+            <span class="keyword" style="margin-left:4em;">return</span>
+            0<span class="spec">;</span>
+          </li>
+          <li>
+            <span class="keyword" style="margin-left:2em;">else if</span>
+            (<span class="var">k</span> <span class="spec">==</span> 1
+            <span class="keyword">||</span> <span class="var">k</span>
+            <span class="spec">==</span> 2)
+          </li>
+          <li>
+            <span class="keyword" style="margin-left:4em;">return</span>
+            1<span class="spec">;</span>
+          </li>
+          <li>
+            <span class="keyword" style="margin-left:2em;">return</span>
+            <span class="method">fibo</span>(<span class="var">k</span>
+            <span class="spec">-</span> 1) <span class="spec">+</span>
+            <span class="method">fibo</span>(<span class="var">k</span>
+            <span class="spec">-</span> 2)<span class="spec">;</span>
+          </li>
+          <li>
+            }
+          </li>
+        </ol>
+        <h4>Avantages et Objectifs du Langage</h4>
+        <ul>
+          <li>
+            <strong>Simplicité</strong> : le langage Java est <i>relativement</i>
+            simple.
+          </li>
+          <li>
+            <strong>Portabilité</strong> : indépendant de la plateforme
+            (architecture et système d'exploitation) grâce à la <i>JVM</i>.
+          </li>
+          <li>
+            <strong>Bibliothèque</strong> : aussi nommée « API Java ». Large
+            bibliothèque de méthodes/classes. <br>
+            Il est probablement impossible d'en connaître l'entièreté.
+          </li>
+          <li>
+            <strong>Sécurité</strong> (<i>safety</i>) : robustesse par
+            abstraction du matériel, typage fort et restrictions d'accès.
+          </li>
+          <li>
+            <strong>Gratuité</strong> : les outils de développement
+            (compilateur, débogueur, éditeurs) sont disponibles gratuitement.
+          </li>
+        </ul>
+      </div>
+      <hr id="clear">
+      <footer>
+        <div id="license">
+          <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+            <!--[if lte IE 8]><img src="../img/IE8/licence.png" style="border-width:0"
+             alt="Licence Creative Commons" width="107" height="20" /><![endif]-->
+            <!--[if !IE]> --><img src="../img/licence.svg" style="border-width:0"
+             alt="Licence Creative Commons" width="107" height="20" /><!-- <![endif]-->
+          </a>
+        </div>
+        <div id="center"><p> inComments ©
+            <!--[if IE 8]>2016<![endif]-->
+            <!--[if !IE 8]> -->
+            2016 <span id="currentYear"></span>
+            <!-- <![endif]-->
+        </p></div>
+        <a href="aboutFR.html"><p id="about">À propos</p></a>
+        <div id="licenselink">
+          inComments est mis à disposition selon les termes de la <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+          licence Creative Commons</a>.
+        </div>
+      </footer>
+    </main>
+    <script>
+        document.getElementById('currentYear').innerHTML = " - " + (new Date()).getFullYear();
+        </script>
+  </body>
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!--[if lte IE 8]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script>
+    document.createElement('header');
+    document.createElement('nav');
+    document.createElement('article');
+    document.createElement('section');
+    document.createElement('footer');
+    </script>
+    <![endif]-->
+    <link rel="stylesheet" href="../style.css">
+    <meta name="description" lang="en" content="Historic and brief explanation
+    of the Python programming language.">
+    <meta name="keywords" lang="en" content="Guido van Rossum, Rossum, Python,
+    object, object-oriented, programming, programming language">
+    <meta name="author" content="Ducobu Alexandre">
+    <title> Python English | inComments </title>
+    <!-- For old IEs -->
+    <link rel="shortcut icon" href="../img/favicons/favicon.ico" />
+    <!-- For new browsers - multisize ico  -->
+    <link rel="icon" type="image/x-icon" sizes="16x16 32x32" href="../img/favicons/favicon.ico">
+    <!-- For Safari's Pinned Tab -->
+    <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#DE5833">
+    <!-- For iPad with high-resolution Retina display running iOS ≥ 7: -->
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../img/favicons/favicon-152.png">
+    <!-- For iPad with high-resolution Retina display running iOS ≤ 6: -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../img/favicons/favicon-144i.png">
+    <!-- For iPhone with high-resolution Retina display running iOS ≥ 7: -->
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="../img/favicons/favicon-120.png">
+    <!-- For iPhone with high-resolution Retina display running iOS ≤ 6: -->
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../img/favicons/favicon-114.png">
+    <!-- For iPhone 6+ -->
+    <link rel="apple-touch-icon-precomposed" sizes="180x180" href="../img/favicons/favicon-180.png">
+    <!-- For first- and second-generation iPad: -->
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../img/favicons/favicon-72.png">
+    <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+    <link rel="apple-touch-icon-precomposed" href="../img/favicons/favicon-57.png">
+    <!-- For Old Chrome -->
+    <link rel="icon" href="../img/favicons/favicon-32.png" sizes="32x32">
+    <!-- For IE10 Metro -->
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta name="msapplication-TileImage" content="../img/favicons/favicon-144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Chrome for Android -->
+    <link rel="manifest" href="../img/favicons/manifest.json">
+    <link rel="icon" sizes="192x192" href="../img/favicons/favicon-192.png">
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Python</h1>
+        <a href="pythonFR.html"><h3>Français</h3></a>
+        <div id="logo">
+          <a href="../index.html">
+            <!--[if lte IE 8]><img src="../img/IE8/logo2.png" style="border-width:0"
+            alt="Logo"width="170"height="170" /><![endif]-->
+            <!--[if !IE]> --><img src="../img/logo2.svg" alt="Logo" style="border-width:0"
+            width="170" height="170" /><!-- <![endif]-->
+          </a>
+        </div>
+      </header>
+      <nav>
+        <div class="link"><a href="../index.html">Home</a></div><!--
+        --><div class="link" id="current"><a href="python.html">Python</a></div><!--
+        --><div class="link"><a href="java.html">Java</a></div><!--
+        --><div class="link"><a href="c.html">C</a></div><!--
+        --><div class="link"><a href="csharp.html">C#</a></div>
+      </nav>
+      <div id="content">
+        <h3>A snake ? Where ? </h3>
+        <p>
+          Python is a multiplatform object-oriented programming language that
+          promotes structured imperative programming. <br>
+          The first version of the language is written by Guido van Rossum in
+          1989, the name is a tribute to the TV series of Monty Python. <br>
+          Since March 6, 2001, the <strong>Python Software Foundation</strong>
+          (<i>PSF</i>) manages the language development, management of trademark
+          rights related to Python as well as the raising of money for the
+          project funding.
+        </p>
+        <!--[if lte IE 8]><img class="centerLogo" src="../img/IE8/Python_Logo.png"
+        alt="Logo of Python" title="Logo of Python" width="304" height="90" /><![endif]-->
+        <!--[if !IE]> --><img class="centerLogo" src="../img/Python_Logo.svg"
+        alt="Logo of Python" title="Logo of Python" width="304" height="90" /><!-- <![endif]-->
+        <p>
+          Its syntax allows programmers to express concepts in fewer lines of
+          code than would be possible in languages such as C++ or Java. <br>
+          It has a strong dynamic typing, automatic memory management and an
+          exception handling, it is thus similar to Perl, Ruby, etc. <br>
+          It is under a free license close to the BSD license and runs on most
+          computer platforms (<i>supercomputers, Windows, Unix, Mac OS or even
+          Android and iOS</i>). It is designed to maximize programmers'
+          productivity by providing high-level tools and a simple syntax to use.
+        </p>
+        <p>
+          That is why it is appreciated by beginners who find a language where
+          the syntax allows an easy introduction to learn basic programming
+          concepts. <br>
+          Moreover, Python is an interpreted language, it can it be in two
+          different ways:
+        </p>
+        <ol>
+          <li><strong>interactive mode</strong>: the code is written in the
+            terminal and the results are instantly displayed.</li>
+          <li>
+            <strong>script mode</strong>: the program is written in a file then
+            it's run in the terminal with the command <br>
+            <span class="terminal">python myFile.py</span>
+          </li>
+        </ol>
+        <p>Voici un exemple de code en Python 2.x:</p>
+        <p class="code" title="'Hello World !' in Python 2.x">
+          <span class="keyword">print</span> <em class="string">"Hello world!"</em>
+        </p>
+        <p>
+          To repair some defaults of the language (for instance, the two types
+          of classes for the object-oriented), and to clean the standard library
+          of its obsolete and redundant elements, Python choose to break backwards
+          compatibility with the new major version, Python 3.0, released in
+          December 2008.
+        </p>
+        <p>Voici maintenant le même code en Python 3.x:</p>
+        <p class="code" title="'Hello World !' in Python 3.x">
+          <span class="keyword">print</span>(<em class="string">"Hello world!"</em>)
+        </p>
+        <p>
+          Python was designed to be a legible language, it aims to be visually
+          clean. For example, it has fewer syntactic constructions than many
+          structured languages such as C, Perl, or Pascal:
+        </p>
+        <ul class="square">
+          <li>Comments are indicated by <strong>#</strong> on a line, and
+            <strong>'''</strong> on multiple lines.</li>
+          <li>
+            The blocks are identified by indentations instead of braces or of
+            <i><strong> begin </strong> ... <strong> end </strong></i> as in
+            other languages. An increase of the indentation marks the beginning
+            of a block and a reduction of the indentation marks the end of the
+            current block.
+          </li>
+        </ul>
+        <ol class="code" title="Factorial of n">
+          <li>
+            <span class="keyword">def</span> <span class="method">factorial</span>
+            (<span class="var">n</span>)<span class="spec">:</span>
+          </li>
+          <li>
+            <em class="comment" style="margin-left:2em;"># Return the factorial of n</em>
+          </li>
+          <li>
+            <span class="keyword" style="margin-left:2em;">if</span>
+            (<span class="var">n</span> <span class="spec">==</span> 0
+            <span class="keyword">or</span> <span class="var">n</span>
+            <span class="spec">==</span> 1)<span class="spec">:</span>
+          </li>
+          <li>
+            <span class="keyword" style="margin-left:4em;">return</span> 1
+          </li>
+          <li>
+            <span class="keyword" style="margin-left:2em;">else</span><span class="spec">:</span>
+          </li>
+          <li>
+            <span class="keyword" style="margin-left:4em;">return</span>
+            <span class="var">n</span> <span class="spec">*</span>
+            <span class="method">factorial</span> (<span class="var">n</span>
+            <span class="spec">-</span> 1)
+          </li>
+        </ol>
+        <h4>Advantages and Goals of the Language</h4>
+        <ul>
+          <li>
+            <strong>Simplicity</strong> : Java is <i>simple</i>.
+          </li>
+          <li>
+            <strong>Portability</strong> : it is platform independent, it is
+            even installed on most operating systems.
+          </li>
+          <li>
+            <strong>Library</strong> : The language provides a set of very
+            complete libraries. Whether to work in web, make scientific
+            calculations or both.
+          </li>
+          <li>
+            <strong>Legibility</strong> : with its principle of indentation,
+            Python codes are usually very simple to read.
+          </li>
+          <li>
+            <strong>Gratuitousness</strong> : the editor (<i>IDLE</i>) and the
+            interpreter are free.
+          </li>
+        </ul>
+      </div>
+      <hr id="clear">
+      <footer>
+        <div id="license">
+          <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+            <!--[if lte IE 8]><img src="../img/IE8/licence.png" style="border-width:0"
+             alt="Licence Creative Commons" width="107" height="20" /><![endif]-->
+            <!--[if !IE]> --><img src="../img/licence.svg" style="border-width:0"
+             alt="Licence Creative Commons" width="107" height="20" /><!-- <![endif]-->
+          </a>
+        </div>
+        <div id="center"><p> inComments ©
+            <!--[if IE 8]>2016<![endif]-->
+            <!--[if !IE 8]> -->
+            2016 <span id="currentYear"></span>
+            <!-- <![endif]-->
+        </p></div>
+        <a href="about.html"><p id="about">About</p></a>
+        <div id="licenselink">
+          inComments is licensed under a
+          <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+          Creative Commons License</a>.
+        </div>
+      </footer>
+    </main>
+    <script>
+        document.getElementById('currentYear').innerHTML = " - " + (new Date()).getFullYear();
+        </script>
+  </body>
+</html>

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!--[if lte IE 8]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script>
+    document.createElement('header');
+    document.createElement('nav');
+    document.createElement('article');
+    document.createElement('section');
+    document.createElement('footer');
+    </script>
+    <![endif]-->
+    <link rel="stylesheet" href="../style.css">
+    <meta name="description" lang="fr" content="Historique et brève explication
+    sur le langage de programmation C#.">
+    <meta name="keywords" lang="fr" content="Microsoft, C#, Csharp, sharp, ASP.NET,
+    .Net, objet, orienté objet, programmation, langage de programmation">
+    <meta name="author" content="Ducobu Alexandre">
+    <title> C# Français | inComments </title>
+    <!-- For old IEs -->
+    <link rel="shortcut icon" href="../img/favicons/favicon.ico" />
+    <!-- For new browsers - multisize ico  -->
+    <link rel="icon" type="image/x-icon" sizes="16x16 32x32" href="../img/favicons/favicon.ico">
+    <!-- For Safari's Pinned Tab -->
+    <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#DE5833">
+    <!-- For iPad with high-resolution Retina display running iOS ≥ 7: -->
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../img/favicons/favicon-152.png">
+    <!-- For iPad with high-resolution Retina display running iOS ≤ 6: -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../img/favicons/favicon-144i.png">
+    <!-- For iPhone with high-resolution Retina display running iOS ≥ 7: -->
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="../img/favicons/favicon-120.png">
+    <!-- For iPhone with high-resolution Retina display running iOS ≤ 6: -->
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../img/favicons/favicon-114.png">
+    <!-- For iPhone 6+ -->
+    <link rel="apple-touch-icon-precomposed" sizes="180x180" href="../img/favicons/favicon-180.png">
+    <!-- For first- and second-generation iPad: -->
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../img/favicons/favicon-72.png">
+    <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+    <link rel="apple-touch-icon-precomposed" href="../img/favicons/favicon-57.png">
+    <!-- For Old Chrome -->
+    <link rel="icon" href="../img/favicons/favicon-32.png" sizes="32x32">
+    <!-- For IE10 Metro -->
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta name="msapplication-TileImage" content="../img/favicons/favicon-144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Chrome for Android -->
+    <link rel="manifest" href="../img/favicons/manifest.json">
+    <link rel="icon" sizes="192x192" href="../img/favicons/favicon-192.png">
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>C#</h1>
+        <a href="csharp.html"><h3>English</h3></a>
+        <div id="logo">
+          <a href="indexFR.html">
+            <!--[if lte IE 8]><img src="../img/IE8/logo2.png" style="border-width:0"
+            alt="Logo"width="170"height="170" /><![endif]-->
+            <!--[if !IE]> --><img src="../img/logo2.svg" alt="Logo" style="border-width:0"
+            width="170" height="170" /><!-- <![endif]-->
+          </a>
+        </div>
+      </header>
+      <nav>
+        <div class="link"><a href="indexFR.html">Accueil</a></div><!--
+        --><div class="link"><a href="pythonFR.html">Python</a></div><!--
+        --><div class="link"><a href="javaFR.html">Java</a></div><!--
+        --><div class="link"><a href="cFR.html">C</a></div><!--
+        --><div class="link" id="current"><a href="csharpFR.html">C#</a></div>
+      </nav>
+      <div id="content">
+        <h3>Précisément, qu'est-ce que le C# ?</h3>
+        <p>
+          Le C# est le langage de programmation phare de Microsoft, uniquement
+          compatible avec Windows. <br>
+          C'est un langage de programmation orienté objet, commercialisé par
+          Microsoft depuis 2002 et destiné à développer sur la plateforme
+          Microsoft .NET. Il est utilisé notamment pour développer des
+          applications web sur la plateforme ASP.NET.<br>
+          Il est dérivé du C++ et très proche du Java dont il reprend la syntaxe
+          générale ainsi que les concepts, en y rajoutant d'autres comme les
+          tuples et les dictionnaires.
+        </p>
+        <!--[if lte IE 8]><img class="centerLogo" src="../img/IE8/Csharp_Logo.png"
+        alt="Logo de C#" title="Logo de C#" width="132" height="90" /><![endif]-->
+        <!--[if !IE]> --><img class="centerLogo" src="../img/Csharp_Logo.svg"
+        alt="Logo de C#" title="Logo de C#" width="132" height="90" /><!-- <![endif]-->
+        <p>
+          C# est un langage dérivé du C++, il apporte un typage sûr, ainsi que
+          les possibilités d'encapsulation, d'héritage et de polymorphisme des
+          langages orientés objet. En C# tous les types sont des objets, tout
+          comme en Java et en Python. <br>
+          De plus, beaucoup de possibilités de Java se retrouvent dans C#.
+          Un code écrit en C# aura donc une forte ressemblance le code équivalent
+          écrit en Java. <br>
+          Par contre, la convention veut que les accolades ouvrantes et
+          fermantes se trouvent sur une ligne vide. <br>
+          Ainsi, voici comment s'écrit le <i>Hello world</i> en C#:
+        </p>
+        <ol class="code" title="'Hello World !' en C#">
+          <li>
+            <strong class="include">using</strong>
+            <span class="bib">System</span><span class="spec">;</span>
+          </li>
+          <li> </li>
+          <li>
+            <strong class="public">public class</strong>
+            <span class="method">HelloWorld</span> {
+          </li>
+          <li>
+            <strong class="public" style="margin-left:2em;">public static
+              void</strong> <span class="method">Main</span>() {
+          </li>
+          <li>
+            <span class="keyword" style="margin-left:4em;">Console</span><span
+            class="spec">.</span><span class="method">WriteLine</span>(<em
+            class="string">"Hello, World!"</em>)<span class="spec">;</span>
+          </li>
+          <li>
+            <span style="margin-left:2em;">}</span>
+          </li>
+          <li>
+            }
+          </li>
+        </ol>
+        <p>
+          L'environnement de développement <strong>Visual Studio</strong>
+          est l'outil généralement utilisé pour programmer en C#. Il offre
+          un éditeur d'interface graphique qui fonctionne par <i>glisser-déposer</i>
+          et qui simplifie grandement la création de logiciels.
+        </p>
+        <p>
+          La documentation du code est particulièrement utile lors des
+          évolutions et de la maintenance du code. C'est pourquoi, comme Java
+          et sa Javadoc, C# propose un mécanisme simple pour insérer dans le
+          code des commentaires de documentation qui seront traités pour
+          réaliser une documentation technique. <br>
+          Ces commentaires - bordés par <strong>///</strong> - sont saisis
+          avant la déclaration des entités de type <i>namespace, classe,
+          interface, champ, propriété, méthode, ou événement</i>.
+          Cette documentation peut être écrite dans un fichier XML lors de la
+          compilation du code source. <br>
+          Voici quelques exemples de tags:
+        </p>
+        <ul class="square">
+          <li>
+            <strong>&lt;summary&gt;</strong> qui permet de fournir un résumé
+            d'une entité;
+          </li>
+          <li>
+            <strong>&lt;return&gt;</strong> qui permet de fournir des
+            informations sur la valeur de retour d'une méthode;
+          </li>
+          <li>
+            <strong>&lt;param&gt;</strong> qui permet de fournir des
+            informations sur un paramètre d'une méthode.
+          </li>
+        </ul>
+        <ol class="code" title="Constructeur d'un objet Movie, exemple de documentation">
+          <li>
+            <strong class="include">using</strong>
+            <span class="bib">System</span><span class="spec">;</span>
+          </li>
+          <li> </li>
+          <li>
+            <em class="comment">/// &lt;<span class="csdoc">summary</span>&gt;</em>
+          </li>
+          <li>
+            <em class="comment">/// Constructeur d'un film.</em>
+          </li>
+          <li>
+            <em class="comment">/// &lt;/<span class="csdoc">summary</span>&gt;</em>
+          </li>
+          <li>
+            <em class="comment">///</em>
+          </li>
+          <li>
+            <em class="comment">/// &lt;<span class="csdoc">param name</span>=<em
+              class="keyword">'title'</em>&gt;Le titre du film.&lt;/<span
+              class="csdoc">param</span>&gt;</em>
+          </li>
+          <li>
+            <em class="comment">/// &lt;<span class="csdoc">param name</span>=<em
+              class="keyword">'director'</em>&gt;Le réalisateur du film.&lt;/<span
+              class="csdoc">param</span>&gt;</em>
+          </li>
+          <li>
+            <em class="comment">/// &lt;<span class="csdoc">param name</span>=<em
+              class="keyword">'date'</em>&gt;La date du film.&lt;/<span
+              class="csdoc">param</span>&gt;</em>
+          </li>
+          <li>
+            <em class="comment">/// &lt;<span class="csdoc">param name</span>=<em
+              class="keyword">'gender'</em>&gt;Le genre du film.&lt;/<span
+              class="csdoc">param</span>&gt;</em>
+          </li>
+          <li>
+            <em class="comment">/// &lt;<span class="csdoc">param name</span>=<em
+              class="keyword">'plot'</em>&gt;L'intrigue du film.&lt;/<span
+              class="csdoc">param</span>&gt;</em>
+          </li>
+          <li>
+            <strong class="public">public</strong>
+            <span class="method">Movie</span>(<span class="type">string</span>
+            <span class="var">title</span>,
+            <span class="type">string</span> <span class="var">director</span>,
+            <span class="type">string</span> <span class="var">date</span>,
+            <span class="type">string</span> <span class="var">gender</span>,
+            <span class="type">string</span> <span class="var">plot</span>) {
+          </li>
+          <li>
+            <span class="keyword" style="margin-left:2em;">this</span><span
+            class="spec">.</span><span class="var">title</span>
+            <span class="spec">=</span>
+            <span class="var">title</span><span class="spec">;</span>
+          </li>
+          <li>
+            <span class="keyword" style="margin-left:2em;">this</span><span
+            class="spec">.</span><span class="var">director</span>
+            <span class="spec">=</span>
+            <span class="var">director</span><span class="spec">;</span>
+          </li>
+          <li>
+            <span class="keyword" style="margin-left:2em;">this</span><span
+            class="spec">.</span><span class="var">date</span>
+            <span class="spec">=</span>
+            <span class="var">date</span><span class="spec">;</span>
+          </li>
+          <li>
+            <span class="keyword" style="margin-left:2em;">this</span><span
+            class="spec">.</span><span class="var">gender</span>
+            <span class="spec">=</span>
+            <span class="var">gender</span><span class="spec">;</span>
+          </li>
+          <li>
+            <span class="keyword" style="margin-left:2em;">this</span><span
+            class="spec">.</span><span class="var">plot</span>
+            <span class="spec">=</span>
+            <span class="var">plot</span><span class="spec">;</span>
+          </li>
+          <li>
+            }
+          </li>
+        </ol>
+        <h4>Avantages et Objectifs du Langage</h4>
+        <ul>
+          <li>
+            <strong>Simplicité</strong> : le C# est <i>relativement</i>
+            simple.
+          </li>
+          <li>
+            <strong>Intégration</strong> : le C# étant une technologie .NET,
+            les logiciels écrits avec auront une meilleure intégration et
+            interopérabilité avec d'autres technologies .NET.
+          </li>
+          <li>
+            <strong>Bibliothèque</strong> : grande bibliothèque standard facile
+            à utiliser avec tout ce qu'il faut savoir sur les méthodes/classes.
+          </li>
+          <li>
+            <strong>Sécurité</strong> : robustesse par abstraction du matériel,
+            typage fort et restrictions d'accès.
+          </li>
+          <li>
+            <strong>Gratuité</strong> : les outils de développement
+            (<strong>Visual Studio</strong>) sont disponibles gratuitement.
+          </li>
+        </ul>
+      </div>
+      <hr id="clear">
+      <footer>
+        <div id="license">
+          <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+            <!--[if lte IE 8]><img src="../img/IE8/licence.png" style="border-width:0"
+             alt="Licence Creative Commons" width="107" height="20" /><![endif]-->
+            <!--[if !IE]> --><img src="../img/licence.svg" style="border-width:0"
+             alt="Licence Creative Commons" width="107" height="20" /><!-- <![endif]-->
+          </a>
+        </div>
+        <div id="center"><p> inComments ©
+            <!--[if IE 8]>2016<![endif]-->
+            <!--[if !IE 8]> -->
+            2016 <span id="currentYear"></span>
+            <!-- <![endif]-->
+        </p></div>
+        <a href="aboutFR.html"><p id="about">À propos</p></a>
+        <div id="licenselink">
+          inComments est mis à disposition selon les termes de la <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+          licence Creative Commons</a>.
+        </div>
+      </footer>
+    </main>
+    <script>
+        document.getElementById('currentYear').innerHTML = " - " + (new Date()).getFullYear();
+        </script>
+  </body>
+</html>

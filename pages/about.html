@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!--[if lte IE 8]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script>
+    document.createElement('header');
+    document.createElement('nav');
+    document.createElement('footer');
+    </script>
+    <![endif]-->
+    <link rel="stylesheet" href="../style.css">
+    <meta name="description" lang="en" content="Presentation, contact and
+    template of the website.">
+    <meta name="keywords" lang="en" content="template, contact, about">
+    <meta name="author" content="Ducobu Alexandre">
+    <title> About | inComments </title>
+    <!-- For old IEs -->
+    <link rel="shortcut icon" href="../img/favicons/favicon.ico" />
+    <!-- For new browsers - multisize ico  -->
+    <link rel="icon" type="image/x-icon" sizes="16x16 32x32" href="../img/favicons/favicon.ico">
+    <!-- For Old Chrome -->
+    <link rel="icon" href="../img/favicons/favicon-32.png" sizes="32x32">
+    <!-- For IE10 Metro -->
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta name="msapplication-TileImage" content="../img/favicons/favicon-144.png">
+    <meta name="theme-color" content="#ffffff">
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1> About </h1>
+        <a href="aboutFR.html"><h3> Français </h3></a>
+        <div id="logo">
+          <a href="../index.html">
+            <!--[if lte IE 8]><img src="../img/IE8/logo2.png" style="border-width:0"
+            alt="Logo"width="170"height="170" /><![endif]-->
+            <!--[if !IE]> --><img src="../img/logo2.svg" alt="Logo" style="border-width:0"
+            width="170" height="170" /><!-- <![endif]-->
+          </a>
+        </div>
+      </header>
+      <nav>
+        <div class="link"><a href="../index.html">Home</a></div><!--
+        --><div class="link"><a href="python.html"> Python </a></div><!--
+        --><div class="link"><a href="java.html"> Java </a></div><!--
+        --><div class="link"><a href="c.html"> C </a></div><!--
+        --><div class="link"><a href="csharp.html"> C# </a></div>
+      </nav>
+      <div id="content">
+        <h3 style="font-style: italic;">Who am I ?</h3>
+        <p>
+          My name is Alexandre Ducobu, and I am a student in computer science
+          and networking in first year at <i>Haute École en Hainaut</i>
+          (<strong><i>HeH</i></strong>). <br>
+		  <a href="https://alexandre-ducobu.com/En" title="Toward my personnal website">Here is my personnal website.</a>
+        </p>
+        <img id="contact" src="../img/Contact.png" alt="Contact" style="border-width:0"
+        width="120" height="120" >
+        <p>You can contact me at:
+          <a href="mailto:alexandre.ducobu@std.heh.be?Subject=Infos%20%7C%20inComments">
+          alexandre.ducobu@std.heh.be</a>
+        </p>
+        <p>Here is the model of this site:</p>
+        <img id="model" src="../img/template.jpg" alt="Template of the site"
+          title="Template of the site" width="300" height="213">
+        <p>
+          You can also download the PDF:
+          <a href="../img/template.pdf" target="_blank">
+              <!--[if lte IE 8]><img src="../img/IE8/pdf.png"  style="border-width:0"
+              alt="Template in PDF" title="Template in PDF" width="50" height="60" /><![endif]-->
+              <!--[if !IE]> --><img src="../img/pdf.svg"  style="border-width:0"
+              alt="Template in PDF" title="Template in PDF" width="50" height="60" /><!-- <![endif]-->
+          </a>
+        </p>
+      </div>
+      <hr id="clear">
+      <footer>
+        <div id="license">
+          <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+            <!--[if lte IE 8]><img src="../img/IE8/licence.png" style="border-width:0"
+             alt="Licence Creative Commons" width="107" height="20" /><![endif]-->
+            <!--[if !IE]> --><img src="../img/licence.svg" style="border-width:0"
+             alt="Licence Creative Commons" width="107" height="20" /><!-- <![endif]-->
+          </a>
+        </div>
+        <div id="center"><p> inComments ©
+            <!--[if IE 8]>2016<![endif]-->
+            <!--[if !IE 8]> -->
+            2016 <span id="currentYear"></span>
+            <!-- <![endif]-->
+        </p></div>
+        <a href="about.html"><p id="about">About</p></a>
+        <div id="licenselink">
+          inComments is licensed under a
+          <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+          Creative Commons License</a>.
+        </div>
+      </footer>
+    </main>
+    <script>
+        document.getElementById('currentYear').innerHTML = " - " + (new Date()).getFullYear();
+        </script>
+  </body>
+</html>

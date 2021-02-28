@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!--[if lte IE 8]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script>
+    document.createElement('header');
+    document.createElement('nav');
+    document.createElement('article');
+    document.createElement('section');
+    document.createElement('footer');
+    </script>
+    <![endif]-->
+    <link rel="stylesheet" href="../style.css">
+    <meta name="description" lang="en" content="Historic and brief explanation
+    of the C programming language.">
+    <meta name="keywords" lang="en" content="Dennis Ritchie, Ritchie, Ken Thompson,
+    Thompson, C, programming, programming language">
+    <meta name="author" content="Ducobu Alexandre">
+    <title> C English | inComments </title>
+    <!-- For old IEs -->
+    <link rel="shortcut icon" href="../img/favicons/favicon.ico" />
+    <!-- For new browsers - multisize ico  -->
+    <link rel="icon" type="image/x-icon" sizes="16x16 32x32" href="../img/favicons/favicon.ico">
+    <!-- For Safari's Pinned Tab -->
+    <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#DE5833">
+    <!-- For iPad with high-resolution Retina display running iOS ≥ 7: -->
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../img/favicons/favicon-152.png">
+    <!-- For iPad with high-resolution Retina display running iOS ≤ 6: -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../img/favicons/favicon-144i.png">
+    <!-- For iPhone with high-resolution Retina display running iOS ≥ 7: -->
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="../img/favicons/favicon-120.png">
+    <!-- For iPhone with high-resolution Retina display running iOS ≤ 6: -->
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../img/favicons/favicon-114.png">
+    <!-- For iPhone 6+ -->
+    <link rel="apple-touch-icon-precomposed" sizes="180x180" href="../img/favicons/favicon-180.png">
+    <!-- For first- and second-generation iPad: -->
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../img/favicons/favicon-72.png">
+    <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+    <link rel="apple-touch-icon-precomposed" href="../img/favicons/favicon-57.png">
+    <!-- For Old Chrome -->
+    <link rel="icon" href="../img/favicons/favicon-32.png" sizes="32x32">
+    <!-- For IE10 Metro -->
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta name="msapplication-TileImage" content="../img/favicons/favicon-144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Chrome for Android -->
+    <link rel="manifest" href="../img/favicons/manifest.json">
+    <link rel="icon" sizes="192x192" href="../img/favicons/favicon-192.png">
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>C</h1>
+        <a href="cFR.html"><h3>Français</h3></a>
+        <div id="logo">
+          <a href="../index.html">
+            <!--[if lte IE 8]><img src="../img/IE8/logo2.png" style="border-width:0"
+            alt="Logo"width="170"height="170" /><![endif]-->
+            <!--[if !IE]> --><img src="../img/logo2.svg" alt="Logo" style="border-width:0"
+            width="170" height="170" /><!-- <![endif]-->
+          </a>
+        </div>
+      </header>
+      <nav>
+        <div class="link"><a href="../index.html">Home</a></div><!--
+        --><div class="link"><a href="python.html">Python</a></div><!--
+        --><div class="link"><a href="java.html">Java</a></div><!--
+        --><div class="link" id="current"><a href="c.html">C</a></div><!--
+        --><div class="link"><a href="csharp.html">C#</a></div>
+      </nav>
+      <div id="content">
+        <h3>A, B, ...</h3>
+        <p>
+          The C language was invented in 1972 at the same time as UNIX by Dennis
+          Ritchie and Ken Thompson. He had developed a predecessor to C, the B
+          language, it has evolved into a sufficiently new different version to
+          be called C. <br>
+          Many modern languages like C ++, Java and PHP are based on some of its
+          aspects.
+        </p>
+        <!--[if lte IE 8]><img class="centerLogo" src="../img/IE8/C_Logo.png"
+        alt="Logo of C" title="Logo of C" width="94" height="100" /><![endif]-->
+        <!--[if !IE]> --><img class="centerLogo" src="../img/C_Logo.svg"
+        alt="Logo of C" title="Logo of C" width="94" height="100" /><!-- <![endif]-->
+        <p>
+          C is a general-purpose and imperative computer programming language,
+          and is described as low-level language. <br>
+          Indeed, it's quite close to the assembly language of which he is a
+          good alternative by the benefits of its more expressive syntax and by
+          the portability of the source code. <br>
+          It is thus extremely used in various fields (such as <i>embedded
+          programming on microcontrollers, intensive calculations, writing
+          operating systems and modules</i>) where the processing speed is important.
+        </p>
+        <p>
+          The C syntax has been designed to be brief. Thus, it has often been
+          compared to the Pascal, another imperative language also created in
+          the 1970s. <br>
+          While the latter uses keywords (<i>function, integer,
+          begin, if, then, else, end</i>), C uses only <i>int, return</i>,
+          brackets and braces. <br>
+          But its brevity does not result only from the syntax but it also comes
+          from the large number of available operators and from the fact that
+          most of the instructions contain an expression that almost always
+          returns a value.
+        </p>
+        <p>
+          The <i>Hello world</i> program is proposed as an example in
+          <strong>The C Programming Language</strong> by Brian Kernighan and
+          Dennis Ritchie in 1978. Now, the program displaying <i>Hello world</i>
+          are used for the presentation of new languages. <br>
+          Here is the one for C:
+        </p>
+        <ol class="code" title="'Hello World' in C">
+          <li>
+            <strong class="include">#include</strong> <span class="bib">&lt;stdio.h&gt;</span>
+          </li>
+          <li> </li>
+          <li>
+            <strong class="keyword">int</strong>
+            <span class="method">main</span>(<strong class="type">void</strong>) {
+          </li>
+          <li>
+            <span class="keyword" style="margin-left:2em;">printf</span>(<em
+            class="string">"hello, world\n"</em>)<span class="spec">;</span>
+          </li>
+          <li>
+            <span class="keyword" style="margin-left:2em;">return</span>
+            0<span class="spec">;</span>
+          </li>
+          <li>
+            }
+          </li>
+        </ol>
+        <p>
+          The C standard specifies the language syntax and a simple library
+          functions. This is less abundant than those provided in other
+          languages, but this is due to the various domains of use of this
+          language, and the portability of language (supercomputers, PC
+          (Windows, Mac OS, GNU / Linux) , etc.). <br>
+          As Java is based on C, the implementation of comments is identical in
+          C:
+        </p>
+        <ul class="square">
+          <li>
+            <strong>on a line</strong>: <em class="comment">
+            // This is a one line comment</em>
+          </li>
+          <li>
+            <strong>on multiple lines</strong>: <em class="comment">
+              /* this is a <br>
+              multiple lines <br>
+              comment */</em>
+          </li>
+        </ul>
+        <ol class="code" title="Factorial of n">
+          <li>
+            <strong class="include">#include</strong> <span class="bib">&lt;stdio.h&gt;</span>
+          </li>
+          <li> </li>
+          <li>
+            <strong class="keyword">int</strong>
+            <span class="method">main</span>(<strong class="type">void</strong>) {
+          </li>
+          <li>
+            <span class="type" style="margin-left:2em;">int</span>
+            <span class="var">c</span>, <span class="var">n</span>,
+            <span class="var">fact</span> <span class="spec">=</span>
+            1<span class="spec">;</span>
+          </li>
+          <li> </li>
+          <li>
+            <em class="comment" style="margin-left:2em;">// Ask the user to
+              enter a number</em>
+          </li>
+          <li>
+            <span class="keyword" style="margin-left:2em;">printf</span>(<em
+            class="string">"Enter a number to calculate it's
+            factorial\n"</em>)<span class="spec">;</span>
+          </li>
+          <li>
+            <span class="keyword" style="margin-left:2em;">scanf</span>(<em
+            class="string">"%d"</em>,
+            <span class="spec">&</span><span class="var">n</span>)<span
+            class="spec">;</span>
+          </li>
+          <li> </li>
+          <li>
+            <span class="keyword" style="margin-left:2em;">for</span>
+            (<span class="var">c</span> <span class="spec">=</span>
+            1<span class="spec">;</span> <span class="var">c</span>
+            <span class="spec">&lt;=</span>
+            <span class="var">n</span><span class="spec">;</span>
+            <span class="var">c</span><span class="spec">++</span>)
+          </li>
+          <li>
+            <span class="var" style="margin-left:4em;">fact</span>
+            <span class="spec">=</span> <span class="var">fact</span>
+            <span class="spec">*</span>
+            <span class="var">c</span><span class="spec">;</span>
+          </li>
+          <li> </li>
+          <li>
+            <span class="keyword" style="margin-left:2em;">printf</span>(<em
+            class="string">"Factorial of %d = %d\n"</em>,
+            <span class="var">n</span>,
+            <span class="var">fact</span>)<span class="spec">;</span>
+          </li>
+          <li>
+            <span class="keyword" style="margin-left:2em;">return</span>
+            0<span class="spec">;</span>
+          </li>
+          <li>
+            }
+          </li>
+        </ol>
+        <h4>Advantages and Goals of the Language</h4>
+        <ul>
+          <li>
+            <strong>Popularity</strong> : C is probably the most popular
+            language and the most used, therefore you can find easily everything
+            you need.
+          </li>
+          <li>
+            <strong>Performance</strong> : it is very efficient, because similar
+            to the machine language.
+          </li>
+          <li>
+            <strong>Portability</strong> : C can be used on any computer with an
+            appropriate compiler (and if the C ANSI standard is respected). It
+            has become the standard programming language for microcomputers.
+          </li>
+          <li>
+            <strong>Legibility</strong> : it is a compact language: it consists
+            of a core of operators and predefined functions limited (simple and
+            effective formulation). That means that it is limited to features
+            that can be effectively translated into machine language.
+          </li>
+          <li>
+            <strong>Gratuitousness</strong> : the programming tools (compiler,
+            debugger, source code editor) are available for free.
+          </li>
+        </ul>
+      </div>
+      <hr id="clear">
+      <footer>
+        <div id="license">
+          <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+            <!--[if lte IE 8]><img src="../img/IE8/licence.png" style="border-width:0"
+             alt="Licence Creative Commons" width="107" height="20" /><![endif]-->
+            <!--[if !IE]> --><img src="../img/licence.svg" style="border-width:0"
+             alt="Licence Creative Commons" width="107" height="20" /><!-- <![endif]-->
+          </a>
+        </div>
+        <div id="center"><p> inComments ©
+            <!--[if IE 8]>2016<![endif]-->
+            <!--[if !IE 8]> -->
+            2016 <span id="currentYear"></span>
+            <!-- <![endif]-->
+        </p></div>
+        <a href="about.html"><p id="about">About</p></a>
+        <div id="licenselink">
+          inComments is licensed under a
+          <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+          Creative Commons License</a>.
+        </div>
+      </footer>
+    </main>
+    <script>
+        document.getElementById('currentYear').innerHTML = " - " + (new Date()).getFullYear();
+        </script>
+  </body>
+</html>
